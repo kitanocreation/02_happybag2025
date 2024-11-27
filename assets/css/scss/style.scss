@@ -1,0 +1,307 @@
+@import './base';
+
+html {
+
+    body {
+
+        .fb-fv {
+            height: 375px;
+        }
+
+        .fb-main {
+
+            .fb-popular {
+                height: 375px;
+            }    
+
+            .fb-lineUp {
+
+                .fb-lineUp-copy {
+                    height: 305px;
+                }    
+            }
+
+            .fb-curry, .fb-sweets, .fb-sezon {
+            
+                .fb-curry-items, .fb-sweets-items, .fb-sezon-items {
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    position: relative;
+    
+                    .fb-bg {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                    }
+    
+                    .fb-items {
+                        width: 85vw;
+                        transform: translateY(-25px);
+                    }
+                }
+
+                .fb-curry-items {
+                    height: 440px;
+                }
+
+                .fb-sweets-items {
+                    height: 482px;
+                }
+    
+                .fb-sezon-items {
+                    height: 477px;
+                }
+                
+                .fb-copy {
+                    background-color: #F4EFE1;
+                    padding-bottom: 35px;
+
+                    h2 {
+                        margin-left: 5vw;
+                        font-size: 21px;
+                    }
+
+                    ul {
+                        width: 90vw;
+                        margin: 12.5px 0 0 5vw;
+
+                        li {
+                            margin-top: 2.5px;
+                        }
+
+                        li:nth-of-type(1) {
+                            margin-top: 0
+                        }
+
+                        li:nth-last-of-type(1) {
+                            font-family: "fot-tsukuardgothic-std",sans-serif;
+                            font-weight: 700;
+
+                            span {
+                                font-size: 17.5px;
+                            }
+                        }
+                    }
+
+                    p {
+                        margin-top: 17.5px;
+                        font-size: 17.5px;
+                        text-align: center;
+
+                        span {
+                            font-size: 28px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .fb-cta_btn {
+                        @include fb-cta_btn;
+                    }            
+                }
+            }
+
+            .fb-sweets {
+
+                .fb-copy {
+                    background-color: #E2B340;
+                }
+            }
+
+            .fb-sezon {
+
+                .fb-copy {
+                    padding-bottom: 70px;
+                }
+            }
+
+            .fb-treat {
+                height: 227px;
+            }
+
+            .fb-qA {
+                background-color: #008DB3;
+
+                h2 {
+                    width: 60vw;
+                    padding-top: 75px;
+                    margin: 0 auto;
+                }
+
+                table {
+                    width: 90vw;
+                    border-radius: 10px;
+                    background-color: #F4EFE1;
+                    margin: 15px auto 0 auto;
+
+                    tbody {
+                        display: block;
+                        padding: 15px 10px;
+
+                        tr {
+                            display: block;
+
+                            th {
+                                font-weight: 700;
+                                text-align: left;
+                            }
+
+                            th, td {
+                                font-size: 12px;
+                            }
+
+                            th:nth-of-type(1), td:nth-of-type(1) {
+                                color: #D61800;
+                            }
+                        }
+
+                        tr:nth-of-type(2) {
+                            padding-top: 5px;
+                        }
+
+                        tr:nth-of-type(3), tr:nth-of-type(6) {
+                            padding-top: 10px;
+
+                            th {
+                                display: block;
+                                font-size: 14px;
+                                color: $black;
+                                text-align: center;
+                            }
+                        }
+
+                        .fb-table-item-free, .fb-table-item {
+                            padding: 0 15px;
+                            margin-top: 25px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+
+                            th, td {
+                                font-size: 10.5px;
+                            }
+
+                            td:nth-of-type(1) {
+                                width: 20%;
+                            }
+
+                            td:nth-of-type(2) {
+                                width: 65%;
+
+                                span {
+                                    display: block;
+                                    background-color: #E2B340;
+                                    padding: 1.25px 0;
+                                    font-weight: 700;
+                                    color: $white;
+                                    text-align: center;
+                                }
+                            }
+                        }
+
+                        .fb-table-item-free {
+                            margin-top: 15px;
+                        }
+
+                        .fb-table-item {
+                           
+                            td:nth-of-type(2) {
+
+                                span {
+                                    background-color: $grey;
+                                }
+                            }
+                        }
+
+                        .fb-table-items-free, .fb-table-items {
+                            padding: 0 15px;
+                            margin-top: 25px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+
+                            th, td {
+                                font-size: 10.5px;
+                            }
+
+                            td:nth-of-type(1) {
+                                width: 20%;
+                            }
+
+                            td:nth-of-type(2) {
+                                width: 20%;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            td:nth-of-type(3) {
+                                width: 50%;
+                                text-align: center;
+
+                                span {
+                                    display: block;
+                                    font-weight: 700;
+                                }
+
+                                span:nth-of-type(1) {
+                                    background-color: #E2B340;
+                                    padding: 1.25px 0;
+                                    color: $white;
+                                }
+
+                                span:nth-of-type(2) {
+                                    color: #E2B340;
+                                }
+                            }
+                        }
+
+                        .fb-table-items-free {
+                            margin-top: 15px;
+
+                            td:nth-of-type(3) {
+
+                                span {
+                                    display: block;
+                                    font-weight: 700;
+                                }
+
+                                span:nth-of-type(1) {
+                                    background-color: #E2B340;
+                                    padding: 1.25px 0;
+                                    color: $white;
+                                }
+
+                                span:nth-of-type(2) {
+                                    color: #E2B340;
+                                }
+                            }
+                        }
+
+                        .fb-table-items {
+                           
+                            td:nth-of-type(3) {
+
+                                span {
+                                    background-color: $grey;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                table:nth-of-type(1) {
+                    margin-top: 25px;
+                }
+
+                table:nth-of-type(4) {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }    
+}
