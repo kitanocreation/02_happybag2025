@@ -82,6 +82,10 @@ pre {
   font-size: 14px;
 }
 
+img {
+  width: 100%;
+}
+
 .fb-pc {
   display: none;
 }
